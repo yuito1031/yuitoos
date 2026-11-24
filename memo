@@ -1,0 +1,16 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { Desktop } from "@/components/os/Desktop";
+
+export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "yuitoos — 友達のためのデスクトップ" },
+      { name: "description", content: "ニュース・マーケット・コミュニティ・学習のアプリが並ぶ、yuitoos。" },
+      { property: "og:title", content: "yuitoos — 友達のためのデスクトップ" },
+      { property: "og:description", content: "ニュース・マーケット・コミュニティ・学習のアプリが並ぶ、yuitoos。" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
+    ],
+  }),
+  component: Desktop,
+});
